@@ -1,7 +1,7 @@
 import { Component, Prop } from '@stencil/core';
 import { css } from 'emotion';
 
-const className = css`
+const someCSSProps  = css`
   color: hotpink;
 `
 
@@ -17,7 +17,7 @@ export class MyComponent {
 
   render() {
     return (
-      <div class={className}>
+      <div className={someCSSProps}>
         Hello, World! I'm {this.first} {this.last}
       </div>
     );
